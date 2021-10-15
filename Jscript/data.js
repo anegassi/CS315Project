@@ -19,7 +19,7 @@ export default{
     image:'images/camera.png',
     price: 75,
     brand:'canion',
-    rating: 4.8,
+    rating: 4.5,
     numReviews: 9,
     
 
@@ -79,7 +79,7 @@ export default{
     image:'images/shelf.png',
     price: 89,
     brand:'wayfair',
-    rating: 3.7,
+    rating: 3.2,
     numReviews: 7,
     
 
@@ -103,7 +103,7 @@ export default{
     image:'images/tool1.png',
     price: 48,
     brand:'dremel',
-    rating: 3.9,
+    rating: 2.4,
     numReviews: 6,
     
 

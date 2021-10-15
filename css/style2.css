@@ -19,7 +19,7 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-header {
+my-header {
   grid-area: header;
   background-color: #203040;
   color: #ffffff;
@@ -29,15 +29,14 @@ header {
   padding: 0.5rem;
 }
 
-header a {
+my-header a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
 }
-header a:hover {
+my-header a:hover {
   color: #e04508;
 }
-
 .brand a {
   font-size: 3rem;
 }
