@@ -1,11 +1,10 @@
 window.onload = function () {
-  alert("onlad");
+  // alert(onlaod);
   const form = document.getElementById("form");
   const username = document.getElementById("username");
   const email = document.getElementById("email");
   const password = document.getElementById("password");
   const password2 = document.getElementById("password2");
-  console.log(username);
 
   form.addEventListener("submit", (e) => {
     alert("submit");
@@ -60,7 +59,6 @@ window.onload = function () {
     } else {
       setSuccessFor(password2);
     }
-    console.log(valid);
     return valid;
   }
 
