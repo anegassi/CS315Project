@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview</title>
+  </head>
+  <body>
+    <!-- <label>Name : Soo</label> -->
+    <label for="username">Username</label>
+
+    <button onclick="edit()">Edit</button>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      // const myParam = urlParams.get("fname");
+      const myParam = urlParams.get("username");
+
+      // console.log(urlParams.get("fname"));
+      // console.log(urlParams.get("username"));
+
+      let label = document.getElementsByTagName("label")[0];
+      label.innerHTML =
+        urlParams.get("username") +
+        " " +
+        urlParams.get("email") +
+        " " +
+        urlParams.get("password");
+
+      function edit() {
+        window.location.href = "/project/signup/signUpMod.html";
+      }
+    </script>
+  </body>
+</html>
