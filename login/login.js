@@ -41,23 +41,22 @@ window.onload = function () {
   function validate(){
       if(email.value == null || email.value == ""){
           document.getElementById("error1").innerHTML= "Please enter a valid email";
-          return false;
-          }
+      }
       
     else if (password.value == null || password.value == ""){
           document.getElementById("error2").innerHTML="Please enter a valid password";
-         return false;
          }
   
-    else if(email =='manager@miu.edu' && password ==='manager')
-    loadpage("productList.html")
+    else if(email ==='manager@miu.edu' && password ==='manager')
+    loadpage("../productList.html")
     //loadpage("inventory.html");
     //window.location.href="inventory.html";
     else {
-         // alert("Successfully logged in");
-         loadpage("productList.html") ;
+         
+         loadpage("../productList.html");
         }
-  
+
+  return false;
         }
   
   function loadpage(url){
