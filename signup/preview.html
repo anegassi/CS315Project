@@ -11,6 +11,7 @@
     <label for="username">Username</label>
 
     <button onclick="edit()">Edit</button>
+    <a href="../login/login.html">Back to Login</a>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       // const myParam = urlParams.get("fname");
@@ -28,7 +29,7 @@
         urlParams.get("password");
 
       function edit() {
-        window.location.href = "/project/signup/signUpMod.html";
+        window.location.href = "signUpMod.html";
       }
     </script>
   </body>

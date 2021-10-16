@@ -1,4 +1,5 @@
 window.onload = function () {
+  alert("onlad");
   const form = document.getElementById("form");
   const username = document.getElementById("username");
   const email = document.getElementById("email");
@@ -7,49 +8,60 @@ window.onload = function () {
   console.log(username);
 
   form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    checkInputs();
+    alert("submit");
+    if (!isValid()) e.preventDefault();
   });
 
-  function checkInputs() {
+  function isValid() {
     // trim to remove the whitespaces
+
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
+    let valid = true;
     if (usernameValue === "") {
+      valid = false;
       setErrorFor(username, "Username cannot be blank");
     } else {
       setSuccessFor(username);
     }
 
     if (emailValue === "") {
+      valid = false;
       setErrorFor(email, "Email cannot be blank");
     } else if (!isEmail(emailValue)) {
+      valid = false;
       setErrorFor(email, "Not a valid email");
     } else {
       setSuccessFor(email);
     }
 
     if (passwordValue === "") {
+      valid = false;
       setErrorFor(password, "Password cannot be blank");
     } else if (!isPassword(passwordValue)) {
+      valid = false;
       setErrorFor(password, "Not a valid password");
     } else {
       setSuccessFor(password);
     }
 
     if (password2Value === "") {
+      valid = false;
       setErrorFor(password2, "Password2 cannot be blank");
     } else if (passwordValue !== password2Value) {
+      valid = false;
       setErrorFor(password2, "Passwords does not match");
     } else if (!isPassword(passwordValue)) {
+      valid = false;
       setErrorFor(password2, "Not a valid password");
     } else {
       setSuccessFor(password2);
     }
+    console.log(valid);
+    return valid;
   }
 
   function setErrorFor(input, message) {
