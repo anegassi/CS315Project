@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login </title>
+    <link rel="stylesheet" href="loginModified.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="login.js" type="text/javascript"></script>
+   
+   
+</head>
+<body>
+      
+  <form class="form-container"  method="post" name="form"onsubmit="return validate()">
+           
+        <h2>Welcome Back</h2>
+        <div class="form-inputs"> 
+          <!--email  -->
+          <label for="email"> Email</label><br>
+          <input type="text" id="email"  placeholder="Enter your email address" name="Email" >
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+            <p id="error1"></p>
+        </div>
+          <!--password  -->
+
+          <div class="form-inputs"> 
+            <label for="password"> Password</label><br>
+            <input type="password"  id="password" placeholder="Enter your password" name="Password" >
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+            <p id="error2"></p>
+          </div>
+
+          <div class="form-inputs"> 
+            <!-- submitt -->
+             <input type="submit" value="Login"  name="login-btn" >
+          </div>
+          <!-- a href= should be signup.html -->
+        <div class="signupcontainer">
+          New User? <label><a href="https://getbootstrap.com/">  Sign UP</a></label>
+        </div>
+        
+    </form>
+
+</body>
+
+</html>
