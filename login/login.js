@@ -1,4 +1,5 @@
 "use strict";
+
 window.onload = function () {
     let email= document.querySelector("#email");
     let password= document.querySelector("#password");
@@ -49,12 +50,12 @@ window.onload = function () {
          }
   
     else if(email =='manager@miu.edu' && password ==='manager')
-    loadpage("https://online.cs.miu.edu/")
+    loadpage("productList.html")
     //loadpage("inventory.html");
     //window.location.href="inventory.html";
     else {
          // alert("Successfully logged in");
-         loadpage("https://online.cs.miu.edu/") ;//    window.location.href="https://www.tutorialrepublic.com";
+         loadpage("productList.html") ;
         }
   
         }
