@@ -8,12 +8,18 @@ class MyHeader extends HTMLElement{
         this.innerHTML=`<div class="left dflex">
         <a href="">
           <img src="images/amazon.png" alt="logo" class="logo" />
-          <span>.in</span>
         </a>
         <div class="item">
           <p><i class="fa fa-map-marker"></i>hello</p>
         </div>
       </div>
+      <!--<div class="brand">
+        <a href="">Amazon</a>
+      </div>-->
+      <!--<div>
+        <a href="">Log in</a>
+        <a href="">Cart</a>
+      </div>-->
       <div class="searchBox dflex">
         <div class="box">
           <div class="dflex">
@@ -35,17 +41,18 @@ class MyHeader extends HTMLElement{
         </div>
         <div class="item">
           <span>
-            <h5>Login</h5>
+            <a href="">Login</a>
           </span>
           <span>
-            <h5>Signup</h5>
+            <a href="">Signup</a>
           </span>
         </div>
         <div class="item">
-          <i class="fa fa-cart-plus"> Cart</i>
+          <a href="">Cart</a>
+          <i class="fa fa-cart-plus"></i>
         </div>
       </div>
-    </header>`
+    `
     }
 }
 customElements.define('my-footer', MyFooter)
