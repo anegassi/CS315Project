@@ -5,9 +5,9 @@ export default{
     name:'bubble gun',
     category:'kids',
     image:'images/bubblegun.png',
-    price: 79,
+    price: 49,
     brand:'toys',
-    rating: 2.5,
+    rating: 4.5,
     numReviews: 10,
     
 
