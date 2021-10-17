@@ -10,7 +10,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-image: url(../login/bgimg.jpg);
+  background-image: url(/images/bgimg.jpg);
 }
 
 .container {

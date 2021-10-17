@@ -48,12 +48,12 @@ window.onload = function () {
          }
   
     else if(email ==='manager@miu.edu' && password ==='manager')
-    loadpage("../productList.html")
+    loadpage("productList.html")
     //loadpage("inventory.html");
     //window.location.href="inventory.html";
     else {
          
-         loadpage("../productList.html");
+         loadpage("productList.html");
         }
 
   return false;

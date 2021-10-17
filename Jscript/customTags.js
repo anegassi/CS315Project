@@ -14,10 +14,11 @@ class MyHeader extends HTMLElement{
         </div>
       </div>
       <!--<div class="brand">
-        <a href="">Amazon</a>
+        <a href="/main.html">Amazon</a>
       </div>-->
       <!--<div>
-        <a href="">Log in</a>
+        <a href="/login.html">Log in</a>
+        <a href="/signUpMod.html">Sign up</a>
         <a href="">Cart</a>
       </div>-->
       <div class="searchBox dflex">
