@@ -12,11 +12,108 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script type="module" src="Jscript/productList.js"></script>
+    <script type="module" src="Jscript/filter.js"></script>
   </head>
   <body>
     <div class="grid-container">
       <my-header></my-header>
-      <main id="main-container"></main>
+      <main id="main-container">
+        <div class="filter">
+          <h3>Departments</h3>
+
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="furniture"
+            id="box1"
+          />
+          Furniture
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="kids"
+            id="box2"
+          />
+          Kids Section
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="electronics"
+            id="box3"
+          />
+          Electronics
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="tools"
+            id="box4"
+          />
+          Tools
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="books"
+            id="box5"
+          />
+          Books
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="checkboxName"
+            value="all"
+            id="box6"
+          />
+          ALL
+          <br />
+          <br />
+
+          <h3>Price</h3>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="radio1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              high to low
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="radio2"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              low to high
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="radio3"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              highest rating
+            </label>
+          </div>
+        </div>
+        <div class="productdiv"></div>
+      </main>
       <my-footer></my-footer>
     </div>
   </body>

@@ -1,14 +1,14 @@
-export default{
-    products:[
+
+    var myProducts=[
 {
     id:'1',
     name:'bubble gun',
     category:'kids',
     image:'images/bubblegun.png',
-    price: 6785,
+    price: 678585,
     brand:'toys',
-    rating: 1.5,
-    numReviews: 10,
+    rating: 2.5,
+    numReviews: 110,
     
 
 },
@@ -142,7 +142,8 @@ export default{
     numReviews: 7,
     
 
-},
+}
 
-    ]
-};
+    ];
+// var products = {hi:1};
+    export {myProducts};

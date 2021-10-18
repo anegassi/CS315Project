@@ -19,6 +19,24 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
+/*******/
+#main-container {
+  display: grid;
+  grid-template-areas: "sidebar" "products";
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+/*.productdiv {
+  grid-area: products;
+}*/
+.filter {
+  grid-area: sidebar;
+  margin-top: 20px;
+  border-right: 1px solid gray;
+  padding-top: 100px;
+}
+/*******/
 my-header {
   grid-area: header;
   background-color: #000;
@@ -122,7 +140,7 @@ my-footer {
   background: rgb(247, 155, 80);
   border-radius: 0 5px 5px 0;
 }
-input {
+my-header input {
   width: 660px;
   padding: 10px;
   font-size: 17px;
