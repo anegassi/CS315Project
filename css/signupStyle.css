@@ -25,6 +25,7 @@ body {
   background: rgb(202, 184, 134);
   position: absolute;
   left: 80px;
+  bottom: 14%;
   transform: translateX(450px);
 }
 
