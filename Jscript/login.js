@@ -47,10 +47,9 @@ window.onload = function () {
           document.getElementById("error2").innerHTML="Please enter a valid password";
          }
   
-    else if(email ==='manager@miu.edu' && password ==='manager')
-    loadpage("productList.html")
-    //loadpage("inventory.html");
-    //window.location.href="inventory.html";
+    else if(email.value ==='manager@miu.edu' && password.value==='manager')
+    loadpage("inventory.html")
+    
     else {
          
          loadpage("productList.html");

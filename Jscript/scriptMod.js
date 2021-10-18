@@ -7,7 +7,6 @@ window.onload = function () {
   const password2 = document.getElementById("password2");
 
   form.addEventListener("submit", (e) => {
-    alert("submit");
     if (!isValid()) e.preventDefault();
   });
 
