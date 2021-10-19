@@ -5,14 +5,14 @@
 body {
   /* background-color: #9b59b6; */
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*display: flex;*/
+  /*align-items: bottom;
+  justify-content: center;*/
   min-height: 100vh;
   margin: 0;
   background-image: url(/images/bgimg.jpg);
-  margin-left: 50px;
-  position: relative;
+  /*margin-left: 50px;*/
+  /*position: relative;*/
 }
 
 .container {
