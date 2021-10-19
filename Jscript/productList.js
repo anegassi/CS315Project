@@ -1,4 +1,4 @@
-
+//const myProducts = require("./data.js")
 import {myProducts} from "./data.js";
 console.log("this file",myProducts )
 import Rating from "./ratings.js";

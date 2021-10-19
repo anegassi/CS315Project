@@ -1,4 +1,4 @@
-
+//module.exports={myProducts};
     var myProducts=[
 {
     id:'1',
@@ -145,5 +145,11 @@
 }
 
     ];
+
+
+    function addToDatabase (obj){
+        myProducts.push(obj)
+        
+    }
 // var products = {hi:1};
-    export {myProducts};
+   export {myProducts,addToDatabase};
