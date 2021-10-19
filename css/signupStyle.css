@@ -14,18 +14,24 @@ body {
   /*margin-left: 50px;*/
   /*position: relative;*/
 }
+.main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+}
 
 .container {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 400px;
   max-width: 100%;
   background: rgb(202, 184, 134);
-  position: absolute;
-  left: 80px;
-  bottom: 14%;
+  /*position: absolute;*/
+  /*left: 80px;*/
+  /*bottom: 14%;*/
   transform: translateX(450px);
 }
 
